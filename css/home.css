@@ -1,0 +1,68 @@
+@import'fonts.css';
+
+/* root star */
+
+:root{
+    --fm100: 'Montserrat-Thin';
+    --fm500: 'Montserrat-Medium';
+    --fmp400: 'MYRIADPRO-REGULAR';
+    --fns400: 'NunitoSans-Regular';
+    --fws: 'WorkSans-Regular';
+    --white: #ffffff;
+    --green: #007d2f;
+    --txt: #191919;
+    --white-dark: #f8f9f9;
+    --text: #171717;
+    --gray-dark: #787878;
+    --footer-bg: #141414;
+    --text-white:#fefefe;
+    --img-background:rgba(55, 137, 86, 0.85);
+    --footer-color: #bcbcbc;
+}
+
+body {
+    font-family: var(--fm500);
+}
+
+ul {
+    list-style: none;
+}
+/* root end */
+/* ************ */
+/* header star */
+.header-home{
+    background: var(--green);
+}
+
+.header-home__info{
+margin: 110px auto 97px;
+}
+
+.header-home__title{
+    color: var(--text);
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 32px;
+    text-align: center
+}
+
+.header-home__text{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 17.29px;
+    line-height: 27px;
+    color: var(--text-white);
+}
+
+/* header star */
+/* ************ */
+/* menu star */
+
+.appraisal-img{
+    margin: 0;
+}
+
+.appraisal-img__link{
+    box-shadow: none;
+    background: var(--img-background);
+}

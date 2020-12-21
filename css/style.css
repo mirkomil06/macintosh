@@ -1,0 +1,596 @@
+@import'fonts.css';
+
+/* root star */
+
+:root {
+    --fm100: 'Montserrat-Thin';
+    --fm500: 'Montserrat-Medium';
+    --fmp400: 'MYRIADPRO-REGULAR';
+    --fns400: 'NunitoSans-Regular';
+    --fws: 'WorkSans-Regular';
+    --txt: #191919;
+    --white: #ffffff;
+    --green: #007d2f;
+    --black: #000000;
+    --title: #1d1d1d;
+    --footer-color: #bcbcbc;
+    --footer-bg: #141414;
+    --gray-dark: #787878;
+    --white-dark: #f8f9f9;
+    --text: #171717;
+    --gray: #d8d8d8;
+    --img-shadow: rgba(32, 22, 0, 0.42);
+    --img-background: rgba(131, 131, 131, 0.08);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--fm500);
+}
+
+.btn__link {
+    text-transform: uppercase;
+    background: var(--green);
+    color: var(--white);
+    line-height: 9px;
+    font-size: 12px;
+    width: max-content;
+    display: block;
+}
+
+.dropdown-menu {
+    transform: translate3d(-150px, 30px, 0px) !important;
+}
+
+.menu-btn {
+    outline: 0 !important;
+    padding: 0px;
+}
+
+.menu-icon {
+    color: var(--black);
+}
+
+.menu-icon:hover {
+    color: var(--green);
+}
+
+/* root end */
+/* ******** */
+/* header star */
+
+.header {
+    background: url(../images/header_bg.jpg) no-repeat center/ cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.header__nav {
+    padding-top: 17px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav__link {
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 9px;
+    color: var(--txt);
+}
+
+.nav__link:hover {
+    color: var(--green);
+}
+
+.header__title {
+    color: var(--title);
+    font-size: 35.84px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+
+.header__text {
+    color: var(--gray-dark);
+    font-size: 15.36px;
+    line-height: 24px;
+    max-width: 445px;
+    margin-bottom: 53px;
+}
+
+.header__link {
+    padding: 23px 45px;
+}
+
+/* header end */
+/* ********** */
+/* main star */
+/* about star */
+.about_us {
+    margin-top: 96px;
+}
+
+.about__title {
+    font-size: 34.43px;
+    color: var(--txt);
+    margin-bottom: 45px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.about__txt {
+    line-height: 21px;
+    font-size: 13.82px;
+    color: var(--gray);
+    max-width: 540px;
+    margin: 0 auto 51px;
+    text-align: center;
+    font-family: var(--fns400);
+}
+
+.about__img {
+    display: block;
+    margin: auto;
+    margin-bottom: 42px;
+}
+
+.professional__skills {
+    background: var(--white-dark);
+    padding: 0 !important;
+}
+
+.professional-skills__img {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+}
+
+.professional-skills__left {
+    padding: 164px 0 0 128px;
+    color: var(--black);
+    width: 50%;
+    font-weight: 700;
+}
+
+.professional-skills__title {
+    font-size: 30px;
+    line-height: 23px;
+    color: var(--text);
+    margin-bottom: 41px;
+}
+
+.professional-skills__text {
+    font-size: 12px;
+    line-height: 9px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.professional-skills-text__txt {
+    margin-left: 18px;
+}
+
+.professional {
+    height: 3px;
+    display: block;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 41px;
+    margin-right: 15px;
+}
+
+.professional-75 {
+    background: linear-gradient(to right, var(--green) 25%, var(--green) 75%, var(--gray) 75%);
+}
+
+.professional-90 {
+    background: linear-gradient(to right, var(--green) 10%, var(--green) 90%, var(--gray) 90%);
+}
+
+.professional-65 {
+    background: linear-gradient(to right, var(--green) 35%, var(--green) 65%, var(--gray) 65%);
+}
+
+.appraisal {
+    background: var(--green);
+    padding: 73px 0 40px;
+}
+
+.appraisal__icon {
+    font-size: 50px;
+    margin-bottom: 11px;
+    color: var(--white);
+}
+
+.appraisal__numeral {
+    font-size: 18px;
+    line-height: 13px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.appraisal__text {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.appraisal-img {
+    padding: 0 !important;
+    margin-top: 55px;
+}
+
+.appraisal-img__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.appraisal__img {
+    position: relative;
+    width: 25%;
+}
+
+.appraisal-img__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 48px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: 7200px 7200px 0 0 var(--img-shadow) inset;
+    background: var(--img-background);
+
+}
+
+.appraisal__img:hover .appraisal-img__link {
+    opacity: 1;
+}
+
+.appraisal__title {
+    margin: 46px 0 0;
+    font-size: 21.13px;
+    color: var(--white);
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* about end */
+/* ********* */
+/* our-workflow star */
+
+.our_workflow {
+    margin-top: 97px;
+}
+
+.our-workflow_title {
+    font-size: 43.62px;
+    line-height: 32px;
+    color: var(--txt);
+    margin-bottom: 29px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.our-workflow_text {
+    max-width: 650px;
+    font-size: 22.28px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--gray-dark);
+    font-family: var(--fns400);
+    margin-bottom: 47px;
+}
+
+.our-workflow_video {
+    margin-bottom: 209px;
+}
+
+.our-workflow__icon {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--gray-dark);
+
+}
+
+.our-workflow__title {
+    font-size: 11.89px;
+    color: var(--txt);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-workflow__text {
+    font-size: 15.86px;
+    font-family: var(--fns400);
+    color: var(--gray-dark);
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.main__carousel {
+    margin-top: 43px;
+    padding: 0 !important;
+}
+
+.carousel-item__background {
+    background: var(--green);
+    padding: 198px 0 172px;
+}
+
+.carousel-item__text {
+    text-align: center;
+    max-width: 730px;
+    font-size: 19.73px;
+    line-height: 30px;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.carousel-item__title {
+    text-transform: uppercase;
+    font-size: 16.41px;
+    text-align: center;
+    line-height: 12px;
+    color: var(--white);
+    margin: 0;
+}
+
+.our-workflow__img {
+    width: 25%;
+    margin-top: 67px;
+    margin-bottom: 61px;
+    display: block;
+}
+
+/* our-workflow end */
+/* **************** */
+/* registration star */
+
+.registration {
+    background: var(--white-dark);
+}
+
+.registration__title {
+    margin-top: 27px;
+    color: var(--title);
+    font-size: 30px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 39px;
+    text-align: center;
+}
+
+.registration__text {
+    max-width: 540px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.form {
+    max-width: 730px;
+    margin: auto;
+}
+
+.input:first-of-type {
+    width: 350px;
+    margin-right: 15px;
+}
+
+.input:nth-of-type(2) {
+    width: 350px;
+    margin-left: 15px;
+}
+
+.input:last-of-type {
+    width: 730px;
+}
+
+.input,
+.textarea {
+    border: none;
+    resize: none;
+    background: var(--white);
+    font-size: 15px;
+    line-height: 11px;
+    color: var(--gray-dark);
+    padding: 18px 16px;
+    margin-bottom: 30px;
+}
+
+.textarea {
+    width: 730px;
+    height: 170px;
+}
+
+.form__link {
+    padding: 23px 25px;
+    margin: 0 auto 100px;
+}
+
+/* registration end */
+/* main end */
+/* ***************** */
+/* footer star */
+
+.footer {
+    background: var(--footer-bg);
+    padding: 99px 0;
+}
+
+.footer-item__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 28px;
+    color: var(--white);
+}
+
+.footer-item__text {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--footer-color);
+    font-family: var(--fmp400);
+}
+
+.footer__link {
+    color: var(--footer-color);
+    font-size: 15px;
+    font-family: var(--fmp400);
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+.footer__ul {
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+
+@media(max-width:1199px) {
+
+    .footer__item {
+        align-items: center;
+    }
+
+    .footer__info {
+        align-items: center;
+    }
+
+    .footer__menu {
+        margin-top: 30px;
+    }
+
+    .footer__ul:first-of-type {
+        padding-left: 0;
+    }
+
+}
+
+@media(max-width:991px) {
+
+    .nav-item {
+        text-align: right;
+    }
+
+    .nav__link {
+        margin: 15px 0 0 0;
+        display: block;
+    }
+
+    .dropdown-menu {
+        right: -150px !important;
+        left: auto !important;
+        top: 5px !important;
+    }
+
+    .professional__skills {
+        flex-direction: column;
+    }
+
+    .professional-skills__left {
+        margin: auto;
+        width: 60%;
+        padding: 0;
+    }
+
+    .professional-skills__img {
+        margin: auto;
+        width: 60%;
+    }
+
+    .professional {
+        margin-right: 0;
+    }
+
+    .our-workflow__img {
+        width: 50%;
+    }
+
+    .input {
+        margin: 0 auto 30px !important;
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .footer-item__text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width:712px) {
+    .appraisal__img {
+        width: 50%;
+    }
+}
+
+@media(max-width:470px) {
+
+    .header__title {
+        text-align: center;
+        line-height: 44px;
+    }
+
+    .header__text {
+        text-align: center;
+    }
+
+    .header__link {
+        margin: auto;
+    }
+
+    .professional-skills__img {
+        width: 100%;
+    }
+
+    .professional-skills__title {
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .appraisal__img {
+        width: 100%;
+    }
+
+    .carousel-item__text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .our-workflow_title {
+        line-height: 40px;
+    }
+}
